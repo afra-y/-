@@ -1,7 +1,5 @@
 ## SpringBoot第十三篇：用restTemplate消费服务
 
-这篇文章主要介绍怎么用消费一个 Restful的web服务。我将用restTemplate去消费一个服务： http://gturnquist-quoters.cfapps.io/api/random.
-
 ## 构架工程
 
 创建一个springboot工程，去消费RESTFUL的服务。这个服务是 http:///gturnquist-quoters.cfapps.io/api/random ，它会随机返回Json字符串。
@@ -36,11 +34,3 @@
 >        “quote”: “It embraces convention over configuration, providing an experience on par with frameworks that excel at early stage development, such as Ruby on Rails.”
 >    }
 > }
-
-## 参考资料
-
-https://spring.io/guides/gs/consuming-rest/
-
-## 源码下载
-
-https://github.com/forezp/SpringBootLearning

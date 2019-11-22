@@ -134,17 +134,3 @@ public class FileUploadController {
 spring.http.multipart.max-file-size=128KB
 spring.http.multipart.max-request-size=128KB
 ```
-
-## 测试
-
-测试情况如图：
-
-
-
-## 参考资料
-
-https://spring.io/guides/gs/uploading-files/
-
-## 源码下载
-
-https://github.com/forezp/SpringBootLearning

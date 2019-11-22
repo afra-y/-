@@ -2,15 +2,6 @@
 
 这篇文篇介绍，怎么为 springboot程序构建一个docker镜像。docker 是一个开源的应用容器引擎，基于 Go 语言 并遵从Apache2.0协议开源。Docker 可以让开发者打包他们的应用以及依赖包到一个轻量级、可移植的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口（类似 iPhone 的 app）,更重要的是容器性能开销极低。
 
-## 准备工作
-
-环境：
-
-- linux环境或mac,不要用windows
-- jdk 8
-- maven 3.0
-- docker
-
 对docker一无所知的看docker教程。
 
 ## 创建一个springboot工程
@@ -136,9 +127,3 @@ ENTRYPOINT [ "sh", "-c", "java $JAVA_OPTS -Djava.security.egd=file:/dev/./urando
 删除镜像：
 
 > docker rm 60fdb5c61692
-
-## 参考资料
-
-https://docs.docker.com/engine/reference/builder/))
-
-http://www.runoob.com/docker/docker-tutorial.html

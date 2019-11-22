@@ -170,9 +170,3 @@ src/main/resources/templates/results.html:
 ![img](https://mmbiz.qpic.cn/mmbiz_png/rtJ5LhxxzwndECAOic552dTLavibQTDicXgUr3lbLdDGAYsuRlOhAxPHZQDQicOT3FVvz796bsSRqiab2Z3UFEkhzsw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
 如果输入：forezp. 18
-
-
-
-## 参考资料
-
-https://spring.io/guides/gs/validating-form-input/

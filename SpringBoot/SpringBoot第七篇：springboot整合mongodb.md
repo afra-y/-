@@ -2,15 +2,6 @@
 
 这篇文章主要介绍springboot如何整合mongodb。
 
-## 准备工作
-
-- 安装 MongoDB
-- jdk 1.8
-- maven 3.0
-- idea
-
-## 环境依赖
-
 在pom文件引入spring-boot-starter-data-mongodb依赖：
 
 ```xml

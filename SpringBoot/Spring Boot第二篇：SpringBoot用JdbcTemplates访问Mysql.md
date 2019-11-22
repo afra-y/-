@@ -2,13 +2,6 @@
 
 本文介绍springboot通过jdbc访问关系型mysql,通过spring的JdbcTemplate去访问。
 
-## 准备工作
-
-- jdk 1.8
-- maven 3.0
-- idea
-- mysql
-
 初始化mysql:
 
 ```sql
@@ -20,9 +13,8 @@ CREATE TABLE `account` (
   `money` double DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
-INSERT INTO `account` VALUES ('1', 'aaa', '1000');
-INSERT INTO `account` VALUES ('2', 'bbb', '1000');
-INSERT INTO `account` VALUES ('3', 'ccc', '1000');
+INSERT INTO `account` VALUES ('1', 'yuzp', '1');
+INSERT INTO `account` VALUES ('2', 'la', '2');
 ```
 
 ## 创建工程
@@ -68,10 +60,10 @@ INSERT INTO `account` VALUES ('3', 'ccc', '1000');
 在application.properties文件配置mysql的驱动类，数据库地址，数据库账号、密码信息。自行修改相关的url等信息。
 
 ```java
-spring.datasource.url=jdbc:mysql://172.18.233.141:3311/saledb_mglt?useUnicode=true&characterEncoding=
+spring.datasource.url=jdbc:mysql://ip地址:端口/数据库名字?useUnicode=true&characterEncoding=
 utf-8&serverTimezone=GMT%2B8&useSSL=false
-spring.datasource.username=dbsaleadm
-spring.datasource.password=dbsaleadm
+spring.datasource.username=账户
+spring.datasource.password=密码
 spring.datasource.driver-class-name=com.mysql.jdbc.Driver
 ```
 
@@ -122,9 +114,6 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-/**
- * Created by fangzhipeng on 2017/4/20.
- */
 @Repository
 public class AccountDaoImpl implements IAccountDAO {
 
@@ -216,7 +205,7 @@ public interface IAccountService {
 
 具体实现类：
 
-```
+```java
 @Service
 public class AccountService implements IAccountService {
     @Autowired
@@ -259,10 +248,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
-/**
- * Created by fangzhipeng on 2017/4/20.
- */
 
 @RestController
 @RequestMapping("/account")

@@ -10,8 +10,8 @@
 
 ```java
 my:
- name: forezp
- age: 12
+ name: yuzp
+ age: 22
 ```
 
 如果你需要读取配置文件的值只需要加@Value(“${属性名}”)：
@@ -35,7 +35,7 @@ public class MiyaController {
 
 启动工程，访问：localhost:8080/miya,浏览器显示：
 
-> forezp:12
+> yuzp:22
 
 ## 二、将配置文件的属性赋给实体类
 
@@ -44,8 +44,8 @@ public class MiyaController {
 
 ```java
 my:
- name: forezp
- age: 12
+ name: yuzp
+ age: 22
  number:  ${random.int}
  uuid : ${random.uuid}
  max: ${random.int(10)}
@@ -105,8 +105,8 @@ public class LucyController {
 上面介绍的是我们都把配置文件写到application.yml中。有时我们不愿意把配置都写到application配置文件中，这时需要我们自定义配置文件，比如test.properties:
 
 ```
-com.forezp.name=forezp
-com.forezp.age=12
+com.forezp.name=yuzp
+com.forezp.age=22
 ```
 
 怎么将这个配置文件信息赋予给一个javabean呢？	
@@ -166,7 +166,7 @@ public class LucyController {
 
 启动工程，打开localhost:8080/user;浏览器会显示：
 
-> forezp12
+> yuzp22
 
 ## 四、多个环境配置文件
 

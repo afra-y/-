@@ -51,14 +51,3 @@ public class ScheduledTasks {
 > 2017-04-29 17:39:42.671  INFO 677 —- [pool-1-thread-1] com.forezp.task.ScheduledTasks           : The time is now 17:39:42
 > 2017-04-29 17:39:47.672  INFO 677 —- [pool-1-thread-1] com.forezp.task.ScheduledTasks           : The time is now 17:39:47
 > 2017-04-29 17:39:52.675  INFO 677 —- [pool-1-thread-1] com.forezp.task.ScheduledTasks           : The time is now 17:39:52
-
-## 总结
-
-在springboot创建定时任务比较简单，只需2步：
-
-- 1.在程序的入口加上@EnableScheduling注解。
-- 2.在定时方法上加@Scheduled注解。
-
-## 参考资料
-
-https://spring.io/guides/gs/scheduling-tasks/

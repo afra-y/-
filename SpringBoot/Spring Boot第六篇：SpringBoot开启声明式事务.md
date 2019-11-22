@@ -2,10 +2,6 @@
 
 springboot开启事务很简单，只需要一个注解@Transactional 就可以了。因为在springboot中已经默认对jpa、jdbc、mybatis开启了事事务，引入它们依赖的时候，事物就默认开启。当然，如果你需要用其他的orm，比如beatlsql，就需要自己配置相关的事物管理器。
 
-## 准备阶段
-
-以上一篇文章的代码为例子，即springboot整合mybatis，上一篇文章是基于注解来实现mybatis的数据访问层，这篇文章基于xml的来实现，并开启声明式事务。
-
 ## 环境依赖
 
 在pom文件中引入mybatis启动依赖：
@@ -44,9 +40,8 @@ CREATE TABLE `account` (
   `money` double DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
-INSERT INTO `account` VALUES ('1', 'aaa', '1000');
-INSERT INTO `account` VALUES ('2', 'bbb', '1000');
-INSERT INTO `account` VALUES ('3', 'ccc', '1000');
+INSERT INTO `account` VALUES ('1', 'y', '1000');
+INSERT INTO `account` VALUES ('2', 'z', '1000');
 ```
 
 ## 配置数据源

@@ -171,15 +171,4 @@ public class SimpleBookRepository implements BookRepository {
 > 2017-04-23 18:17:09.481  INFO 8054 —- [           main] forezp.AppRunner                         : isbn-1234 →Book{isbn=’isbn-1234’, title=’Some book’}
 > 2017-04-23 18:17:09.481  INFO 8054 —- [           main] forezp.AppRunner                         : isbn-1234 →Book{isbn=’isbn-1234’, title=’Some book’}
 
-只有打印前面2个数据，程序等了3s，之后的数据瞬间打印在控制台上了，这说明缓存起了作用。
 
-源码下载：https://github.com/forezp/SpringBootLearning
-
-## 参考资料
-
-caching
-
-Spring Boot 揭秘与实战（二） 数据缓存篇 - 快速入门
-
-
-  

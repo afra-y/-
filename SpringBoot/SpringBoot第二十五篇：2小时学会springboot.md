@@ -2,12 +2,6 @@
 
 ### 一.什么是spring boot
 
-> Takes an opinionated view of building production-ready Spring applications. Spring Boot favors convention over configuration and is designed to get you up and running as quickly as possible.
->
-> 摘自官网
->
-> 翻译：采纳了建立生产就绪Spring应用程序的观点。 Spring Boot优先于配置的惯例，旨在让您尽快启动和运行。
-
 spring boot 致力于简洁，让开发者写更少的配置，程序能够更快的运行和启动。它是下一代javaweb框架，并且它是spring cloud（微服务）的基础。
 
 ### 二、搭建第一个sping  boot 程序
@@ -237,9 +231,3 @@ public class GirlController {
 
    }
 ```
-
-如果需要事务的话，在service层加@Transaction注解即可。已经凌晨了，我要睡了.
-
-源码；http://download.csdn.net/detail/forezp/9778235
-
-关注我的专栏《史上最简单的 SpringCloud 教程 》http://blog.csdn.net/column/details/15197.html

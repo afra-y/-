@@ -1,9 +1,5 @@
 ## SpringBoot第十九篇： 创建含有多module的springboot工程
 
-原创： Forezp [方志朋](javascript:void(0);) *2017-09-22*
-
-![img](http://mmbiz.qpic.cn/mmbiz_jpg/rtJ5LhxxzwndECAOic552dTLavibQTDicXgqFRpmlT1uiarHZdplfvDyVVL1c3bOYFPbiaxbHcbBicg9shtdRfpSuaGQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5)
-
 这篇文章主要介绍如何在springboot中如何创建含有多个module的工程，栗子中含有两个 module，一个作为libarary. 工程，另外一个是主工程，调用libary .其中libary jar有一个服务，main工程调用这个服务。
 
 ## 创建根工程
@@ -103,7 +99,3 @@ service.message=Hello World
 > Hello World
 
 说明确实引用了libary中的方法。
-
-## 参考资料
-
-https://spring.io/guides/gs/multi-module/

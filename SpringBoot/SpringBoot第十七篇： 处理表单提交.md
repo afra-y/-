@@ -123,7 +123,3 @@ src/main/resources/templates/result.html
 点击submit:
 
 ![img](https://mmbiz.qpic.cn/mmbiz_png/rtJ5LhxxzwndECAOic552dTLavibQTDicXgaqVUicGtWgdlCZbx0ibRwGSPw24usdJvuic3pB9NcLFJAteaxW369LakA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
-
-## 参考资料
-
-https://spring.io/guides/gs/handling-form-submission/

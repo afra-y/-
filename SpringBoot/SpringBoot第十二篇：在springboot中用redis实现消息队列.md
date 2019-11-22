@@ -2,13 +2,6 @@
 
 这篇文章主要讲述如何在springboot中用reids实现消息队列。
 
-## 准备阶段
-
-- 安装redis,可参考我的另一篇文章，5分钟带你入门Redis。
-- java 1.8
-- maven 3.0
-- idea
-
 ## 环境依赖
 
 创建一个新的springboot工程，在其pom文件,加入spring-boot-starter-data-redis依赖：
@@ -113,16 +106,6 @@ public static void main(String[] args) throws Exception{
 
 > 2017-04-20 17:25:15.536  INFO 39148 —- [           main] com.forezp.SpringbootRedisApplication    : Sending message…
 >      2017-04-20 17:25:15.544  INFO 39148 —- [    container-2] com.forezp.message.Receiver              : 》Received
-
-测试通过，接收者确实接收到了发送者的消息。
-
-## 源码下载：
-
-https://github.com/forezp/SpringBootLearning
-
-## 参考资料
-
-messaging-redis
 
 
 

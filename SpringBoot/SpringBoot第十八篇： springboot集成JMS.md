@@ -1,9 +1,5 @@
 ## SpringBoot第十八篇： springboot集成JMS
 
-原创： Forezp [方志朋](javascript:void(0);) *2017-09-23*
-
-![img](http://mmbiz.qpic.cn/mmbiz_jpg/rtJ5LhxxzwndECAOic552dTLavibQTDicXgAvrXuZHVqF0B9HpwsacyViaIcO15Hpn9VT77Sb23MkDraA6mYPrh05Q/640?wx_fmt=jpeg&tp=webp&wxfrom=5)
-
 springboot对JMS提供了很好的支持，对其做了起步依赖。
 
 ## 构架工程
@@ -170,7 +166,3 @@ public class SpringbootJmsApplicationTests {
 ```
 
 测试已全部通过，没有坑。
-
-## 参考资料
-
-http://blog.720ui.com/2017/springboot_07_othercore_javamail/
